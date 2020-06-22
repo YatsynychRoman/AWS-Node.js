@@ -1,13 +1,137 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Яцинич ІТ-21</title>
+    <style>body{
+        font-family: 'Noto serif', serif;
+        margin: 0 10px;
+    }
+    header{
+        width: 100%;
+        height: 150px;
+        background: linear-gradient(rgb(60, 160, 0), rgb(160, 215, 120), rgb(60, 160, 0));
+        margin-bottom: 30px;
+    }
+    h1{
+        font-size: 48px;
+        color: white;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 40px;
+    }
+    .about{
+        margin-bottom: 40px;
+    }
+    .about h2{
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+    .responsibilities{
+        margin-bottom: 10px;
+    }
+    .responsibilities h3{
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    .form{
+        text-align: center;
+    }
+    .container{
+    }
+    .form p{
+        text-align: left;
+        margin-bottom: 3px;
+    }
+    .name-input{
+        width: 100%;
+        border-radius: 5px;
+        border: solid grey;
+    }
+    .name-input::placeholder{
+        padding: 5px;
+    }
+    .contacts-input{
+        width: 1870px;
+        border-radius: 5px;
+        border: solid grey;
+    }
+    .contacts-input::placeholder{
+        padding: 5px;
+    }
+    .contacts-p{
+        margin: 0 15px;
+    }
+    .form-button{
+        background-color: limegreen;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        width: 1870px;
+        height: 50px;
+        margin: 15px;
+    }
+    hr {
+        color: darkred;
+        border: 1px dashed;
+        margin-bottom: 30px;
+    }
+    footer{
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+    @media (min-width:1300px){.container{max-width: 100%}}
+    </style>
 </head>
 <body>
-    <h1>TEST321321</h1>
+<header><h1>Вакансії в Україні</h1></header>
+<section class="about">
+    <h2>Azon5. Junior Java Developer</h2>
+    <p><b>Azon5 -</b> we are the technological leading software partner for the retail industry. At our headquarters in Schoneck and 8 further locations worldwide we have managed to implement more than 202.000 installations in over 40 countries. More than 800 employees are working successfully with great passion and know-how on the development, production, sales and distribution of end-to-end solutions for point-of-sale, server and network systems, including maintenance and servicing and we are proud of that!</p>
+</section>
+<section class="responsibilities">
+    <h3>Responsibilities</h3>
+    <ul>
+        <li>Develop and design customer-specific business software solutions including customization;</li>
+        <li>Create and perform development tests;</li>
+        <li>Analyze, resolve and document customer data;</li>
+        <li>Write technical documentation;</li>
+        <li>Instruct and train employees of the development environment;</li>
+        <li>Perform expense analysis and coordinate requirements with Project Management and partners.</li>
+    </ul>
+</section>
+<iframe width="100%" height="850px" src="https://www.youtube.com/embed/13asaUq3Bs4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<section class="form">
+    <h3>Надішліть нам резюме</h3>
+    <form action="submit">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>Ім'я</p>
+                    <input type="text" class="name-input" placeholder="Ваше ім'я">
+                </div>
+                <div class="col-lg-6">
+                    <p>Прізвище</p>
+                    <input type="text" class="name-input" placeholder="Ваше прізвище">
+                </div>
+            </div>
+        </div>
+        <p class="contacts-p">E-mail</p>
+        <input type="text" class="contacts-input" placeholder="you@example.com">
+        <p class="contacts-p">Адреса</p>
+        <input type="text" class="contacts-input" placeholder="Україна, Львів">
+        <button class="form-button">Надіслати</button>
+    </form>
+</section>
+<hr>
+<footer>&copy <a href="https://www.linkedin.com/in/roman-yatsynych-938459108/">Яцинич Р.В. ІТ-21</a></footer>
 </body>
 </html>
