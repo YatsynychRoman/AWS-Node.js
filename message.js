@@ -17,7 +17,7 @@ msgButton.onclick = (e) => {
         .catch(error => {
             console.log(error)
         })
-}
+};
 
 let sbcButton = document.getElementById("sbcButton");
 sbcButton.onclick = (e) => {
@@ -35,6 +35,6 @@ sbcButton.onclick = (e) => {
         .catch(error => {
             console.log(error)
         })
-}
+};
 
 
