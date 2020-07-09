@@ -16,6 +16,7 @@ app.get('/', (req, res) => {
 
 app.use(cors());
 app.post("/usermail", async (request, response) => {
+    try {
     const {sbcMail} = request.body;
     connection.query( `INSERT INTO subscribers(email) VALUES(?)`, [sbcMail]);
     const transport = mailer.createTransport({
@@ -35,7 +36,11 @@ app.post("/usermail", async (request, response) => {
         html:"<div><h1>Thank you for subscribe</h1></div>"
     });
     response.status(200).send({message: "success"})
-});
+} catch (e) {
+    }
+    {
+        response.status(400).send(e.message)
+    }});
 
 http.listen(3000, () => {
     console.log('3000');
