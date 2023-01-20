@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 });
 
 app.use(cors());
-app.post("/usermail", async (request, response) => {
+app.post("/usermil", async (request, response) => {
     try {
     const {sbcMail} = request.body;
     connection.query( `INSERT INTO subscribers(email) VALUES(?)`, [sbcMail]);
